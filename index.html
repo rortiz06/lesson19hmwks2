@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quotable Quotes - Unobtrusively</title>
+  </head>
+  <H1>Click on refresh to change images</H1>
+<body>
+  <img src="" id="img">
+
+<script>
+  const imgs = ["dog.jpg",
+                "deer.jpg", 
+                "eagle.jpg",
+                "tiger.jpg",
+                "wolf.jpg",
+                "world.jpg"]
+  function getImages() {
+    i = Math.floor(Math.random()*imgs.length);
+    document.getElementById("img").src = imgs[i];
+  }
+
+  getImages();
+</script>
+<br>
+</body>
+<a href="http://csnet.southtexascollege.edu/localuser/rortiz84/">Go Back to HomePage</a><br>
+<p style="color: green;"> Roy Ortiz</p><br>
+
+</html>
